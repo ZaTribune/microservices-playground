@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "8b8d19a3-6cef-410f-8838-b23fabcedb15",
+		"name": "less-external-sql-demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14524570"
+	},
+	"item": [
+		{
+			"name": "get storefronts data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/data/storefronts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"data",
+						"storefronts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get products data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/data/products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"data",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products - product by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8083/products/product/9999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8083",
+					"path": [
+						"products",
+						"product",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "storefronts- storefront by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8082/storefronts/storefront/9999",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8082",
+					"path": [
+						"storefronts",
+						"storefront",
+						"9999"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query - sample",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\":1,\r\n    \"storefront\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/query/product",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"query",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "query zipped - sample",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"product\":1,\r\n    \"storefront\":50\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/query/product/zipped",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"query",
+						"product",
+						"zipped"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
